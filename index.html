@@ -15,34 +15,28 @@
     <body>
         
         <!-- Navigation -->
-        <nav class="navArea">
+        <header class="navArea">
 
-            <div class="navSection navLogo">
-                <h1 class="navLogoText">webTitle</h1>
-            </div>
+            <h1 class="navSection navLogo">Logo</h1>
 
-            <div class="navSection navMenu">
-                <ul class="navList navPages">
-                    <li class="navItem"><a href="#home">Home</a></li>
-                    <li class="navItem"><a href="#work">Work</a></li>
-                    <li class="navItem"><a href="#contact">Contact</a></li>
-                    <li class="navItem"><a href="#contact">Contact</a></li>
-                    <li class="navItem"><a href="#contact">Contact</a></li>
-                    <li class="navItem"><a href="#support">Support</a></li>
+            <nav class="navSection navMenu">
+                <ul class="navList">
+                    <li class="navItem"><a class="active" href="#home">Home<span></span></a></li>
+                    <li class="navItem"><a href="#work">Work<span></span></a></li>
+                    <li class="navItem"><a href="#contact">Contact<span></span></a></li>
+                    <li class="navItem"><a href="#support">Support<span></span></a></li>
                 </ul>
-            </div>
+            </nav>
+            
+            <button class="navSection navButton">
+                <div id="navIcon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>    
 
-            <div class="navSection navControls">
-                <button class="navButton" title="Show / Hide menu">
-                    <div id="navIcon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </button>    
-            </div>
-
-        </nav>
+        </header>
 
 
         <!-- js -->
