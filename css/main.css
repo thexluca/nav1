@@ -12,7 +12,7 @@ body {
 .pages {
   width: auto;
   padding: 100px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Navigation */
@@ -45,7 +45,7 @@ body {
   background-color: red;
 
   transform: translateX(-100%);
-transition: .5s linear;
+  transition: .5s linear;
 }
 
 .navMenu.show {
@@ -58,6 +58,8 @@ transition: .5s linear;
 
 .navItem {
   display: block;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
 }
 
 .navItem a {
@@ -66,7 +68,6 @@ transition: .5s linear;
   color: #fff;
   font-weight: 600;
   text-decoration: none;
-  margin-left: 20px;
   padding: 6px 15px;
   transition: .5s ease-in-out;
 }
@@ -203,6 +204,7 @@ transition: .5s linear;
   }
   .navItem {
       display: inline;
+      margin: 0px 0px 0px 20px;
   }
   .navButton {
       display: none;
