@@ -31,5 +31,24 @@ window.onload = function() {
         }
         navItems[i].querySelector('a').onclick = smoothScroll;
     }
+
+    // Activate Nav Pages on scroll 
+    const sections = document.getElementsByClassName("pages");
+    window.onscroll = () => {
+        let current = "";
+        for(let i=0; i<sections.length; i++){
+            const sectionTop = sections[i].offsetTop;
+            const sectionHeight = sections[i].clientHeight;
+            if( scrollY >= (sectionTop - sectionHeight / 3) ){
+                current = sections[i].getAttribute('id');
+            }
+        }
+        for(let i=0; i<navItems.length; i++){
+            navItems[i].firstChild.classList.remove("active");
+            if(navItems[i].firstChild.classList.contains(current)){
+                navItems[i].firstChild.classList.add("active");
+            }
+        }
+    }
     
-}// end of window.onload
+} // end of window.onload
