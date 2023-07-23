@@ -1,4 +1,4 @@
-window.onload = function() {
+const navInit = function(){
     // Variables
     let breakpoint = 768; // css breakpoint
     const navIcon = document.getElementById("navIcon");
@@ -51,4 +51,4 @@ window.onload = function() {
         }
     }
     
-} // end of window.onload
+} // end of navInit
