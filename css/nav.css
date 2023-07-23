@@ -21,12 +21,19 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 100px;
+  padding: 30px  100px 0px 100px;
   background-color: red;
 
+  z-index: 100;
+}
+.navWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 3.7em;
+
+  border-bottom: 3px solid #333;
+
   z-index: 100;
 }
 
@@ -46,6 +53,10 @@ body {
 
   transform: translateX(-100%);
   transition: .5s linear;
+  /* centers navList */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navMenu.show {
